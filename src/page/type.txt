@@ -1,0 +1,39 @@
+Endpoint
+An endpoint is a specific url where a client  sends a request to a server.
+Types of endpoints:
+	GET /products – get products
+	POST /login – log in a users
+	PUT /users/5 – update user with ID 5
+	DELETE /comment/3 – delete comment with ID 3
+Example:GET https://api.example.com/users
+
+
+ Difference Between Endpoints and API
+API	A full system that defines how two applications talk.
+Endpoint	A single URL within the API that performs a specific task.
+
+
+Array Methods & Their Return Types
+Method	What it Does	Return Type
+.map()	Transforms each item	New array
+.filter()	Filters items that match condition	New array
+.forEach()	Loops through items (no return)	undefined
+.reduce()	Reduces array to a single value	Any (number, obj)
+.find()	Finds first match	Single value or undefined
+.includes()	Checks if value exists	Boolean (true/false)
+.some()	At least one matches condition?	Boolean
+.every()	Do all items match condition?	Boolean
+.sort()	Sorts items in place	Same array
+.concat()	Combines arrays	New array
+.slice()	Extracts part of array	New array
+.splice()	Adds/removes elements (changes original)	Removed items array
+
+Interface
+An interface in TypeScript is used to define the shape (or structure) of 
+an object. It specifies the properties and their types that an object 
+should have, but it doesn’t generate any JavaScript code
+ — it's purely for type-checking during development.
+
+Types
+ In TypeScript, type aliases (type) are another way to describe the
+  shape or structure of data — similar to interfaces — but with more flexibility.

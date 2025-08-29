@@ -1,0 +1,170 @@
+Primary Color
+Red Blue Yellow
+
+Secondary Color
+Red + Yellow = orange
+Blue + Yellow = Green 
+Red + Blue = Purple
+
+Tertiary 
+Red-Orange 
+Yellow-Orange
+Yellow-Green
+Blue-Green
+Blue-Violet
+Red-Violet
+
+Analagous color are neighbouring color in the color wheel 
+compimentary color are color opposite each other in the color wheel
+Monochromatic color are shades of the same color 
+triadic color are color that are equally spaced in the color wheel
+tetradic color are set of two complimentary color 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is MongoDB?
+MongoDB is a NoSQL database used to store large amounts of data in a flexible, scalable, and high-performance way.
+
+Unlike SQL databases like MySQL or PostgreSQL that store data in tables and rows, MongoDB stores data in collections and documents.
+
+
+Feature	MongoDB (NoSQL)	SQL (Relational)
+Structure	      Document-based (BSON/JSON)	Table-based (Rows)
+Schema	      Dynamic/Flexible	          Fixed schema
+Joins	      No joins (usually)	      Supports joins
+Scalability	      Horizontally scalable	          Vertically scalable
+Performance	      Fast for unstructured data	Structured and relational data
+
+
+
+Feature	MongoDB Compass	MongoDB Atlas
+ What it is	A desktop GUI (app) for MongoDB	A cloud-based database service (hosted by MongoDB)
+Where it's used	Installed locally on your computer	Runs online on the web/cloud
+ Main Purpose	Used to interact with your MongoDB data visually	Used to host/manage MongoDB databases online
+ Functionality	View collections, insert/edit data, run queries	Create databases, scale clusters, backup, monitor
+
+ Works with	MongoDB (local or remote, including Atlas)	Used to host MongoDB, and works with Compass too
+
+ Example Scenario
+MongoDB Compass
+You install Compass on your computer and connect it to a local MongoDB server on your machine or to a remote database like Atlas.
+
+MongoDB Atlas
+You create a MongoDB database online, and it gives you a connection string.
+Then you can connect to it using:
+
+your code (Node.js, Python, etc.)
+
+Compass (for GUI access)
+
+or the Atlas dashboard itself
+
+ How They Work Together
+You create a cloud database on MongoDB Atlas
+
+You copy the connection URI (like mongodb+srv://...)
+
+You paste it into MongoDB 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Async/Await in Node.js
+Async/Await is a more modern and cleaner way to handle asynchronous code. It works with Promises and allows you to
+ write asynchronous code that looks synchronous.
+
+How It Works:
+async is used to declare a function that will return a Promise.
+
+await is used inside an async function to pause execution until the promise resolves (or rejects).
+
+
+
+Using Try...Catch with Async/Await
+When using async functions, you can wrap the code in a try...catch block to handle any 
+errors that might occur in the async operation (like network failures, database errors, etc.).
+
+try: The block where you attempt to execute asynchronous code.
+
+catch: If an error occurs, this block catches it and handles it.
+
+ 
+
+
+Synchronous vs. Asynchronous
+Synchronous
+Synchronous operations are executed one after the other. The program waits for each task
+ to complete before moving on to the next.
+
+In other words, tasks are handled sequentially and blocking (each task blocks the next one until it’s done).
+
+Asynchronous operations allow tasks to run concurrently without waiting for each other. The program doesn’t wait 
+for the task to finish before moving to the next one.
+
+In asynchronous programming, tasks are executed in parallel, and you can handle the results once they are ready.
+
+
+
+
+Feature	               Synchronous	                                  Asynchronous
+Execution	Tasks run one after another (sequentially)	         Tasks run concurrently (in parallel)
+Block	Blocks the next task until the current task is done 	Doesn't block the next task; moves on immediately
+Use case	Good for tasks that depend on each other	       Best for tasks that don’t depend on each other
+Complexity	Easier to write and understand	                  More complex, needs callbacks or promises
+
+
+
+In Node.js, modules allow you to organize your code by dividing it into separate files.
+ You can create your own modules or use built-in Node.js modules.
+
+Core Modules: Built-in modules that come with Node.js (e.g., http, fs, path).
+
+Custom Modules: You can create your own modules and export functions, objects, or values to use 
+them in other parts of your application.
+
+
+Promises are used for asynchronous operations in Node.js, which helps handle operations like file I/O, 
+network requests, or database queries without blocking the main thread.
+
+A Promise represents the eventual completion (or failure) of an asynchronous operation.
+
+ 
